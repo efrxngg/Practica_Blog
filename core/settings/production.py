@@ -18,9 +18,9 @@ DATABASES = {
         'HOST': 'ec2-44-206-89-185.compute-1.amazonaws.com',
         'PORT': 5432,
         
-
-
     }
 }
 
 
+PATH_GENERAL = Path(__file__).resolve().parent.parent.parent
+STATICFILES_DIRS=[PATH_GENERAL.joinpath('static')]
