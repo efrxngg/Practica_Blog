@@ -11,8 +11,12 @@ ALLOWED_HOSTS = ['viewsbasefunction.herokuapp.com']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db.sqlite3'
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'empresax',
+        'USER': 'root',
+        'PASSWORD': 'root1234',
+        'HOST': '127.0.0.1',
+        'PORT': '3307'
     }
 }
 
