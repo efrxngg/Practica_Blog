@@ -1,3 +1,4 @@
+from pyexpat import model
 from django.contrib import admin
 from .models import Autor, Categoria, Post
 from import_export import resources
@@ -30,4 +31,12 @@ admin.site.register(Autor, AutorAdmin)
 
 
 
-admin.site.register(Post)
+class PostResource(resources.ModelResource):
+    class Meta:
+        model = Post
+
+class PostAdmin(ImportExportModelAdmin, admin.ModelAdmin):
+    search_fields = ['id', 'titulo', 'categoria']
+    list_display = ('id', 'titulo')
+    resource_class = PostResource
+admin.site.register(Post, PostAdmin)
