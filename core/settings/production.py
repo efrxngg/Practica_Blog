@@ -11,12 +11,15 @@ ALLOWED_HOSTS = ['viewsbasefunction.herokuapp.com']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'empresax',
-        'USER': 'root',
-        'PASSWORD': 'root1234',
-        'HOST': '127.0.0.1',
-        'PORT': '3307'
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd9u28t2oqe8t0s',
+        'USER': 'ewzhmjbvzslftm',
+        'PASSWORD': '64ffae41433438fcef11eadd9964848f3e9184f3bc51cdf7197ebf03f3f87e29',
+        'HOST': 'ec2-44-206-89-185.compute-1.amazonaws.com',
+        'PORT': 5432,
+        
+
+
     }
 }
 
