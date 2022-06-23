@@ -21,3 +21,5 @@ DATABASES = {
 }
 
 
+PATH_GENERAL = Path(__file__).resolve().parent.parent.parent
+STATICFILES_DIRS=[PATH_GENERAL.joinpath('static')]
